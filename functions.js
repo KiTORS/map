@@ -5,6 +5,10 @@ var kea_lygten02 = {lat: 55.705038, lng: 12.537851};
 var kea_prinsesse = {lat: 55.694431, lng: 12.550899};
 var kea_landskronagade = {lat: 55.714660, lng: 12.569993};
 
+var image = {
+    url:'img/point.png'
+}
+
 var map;
       function initMap() {
         map = new
@@ -14,34 +18,43 @@ var map;
         });
 
           /* MARKERS */
-          var marker = new google.maps.Marker({
+          var marker01 = new google.maps.Marker({
           position: kea_lygten01,
           map: map,
-          title: 'KEA LYGTEN ER HER!!'
+              icon: image,
+          title: 'KEA LYGTEN ER HER!!', animation:google.maps.Animation.BOUNCE,
+
         });
-          var marker = new google.maps.Marker({
+          var marker02 = new google.maps.Marker({
           position: kea_guldberg,
           map: map,
-          title: 'KEA GULDBERGSGADE ER HER!!'
+              icon: image,
+          title: 'KEA GULDBERGSGADE ER HER!!',
+              animation:google.maps.Animation.BOUNCE,
         });
-           var marker = new google.maps.Marker({
+           var marker03 = new google.maps.Marker({
           position: kea_bispevej,
           map: map,
-          title: 'KEA BISPEVEJ ER HER!!'
+               icon: image,
+          title: 'KEA BISPEVEJ ER HER!!',animation:google.maps.Animation.BOUNCE,
         });
-          var marker = new google.maps.Marker({
+          var marker04 = new google.maps.Marker({
           position: kea_lygten02,
           map: map,
-          title: 'KEA LYGTEN ER HER!!'
+              icon: image,
+          title: 'KEA LYGTEN ER HER!!',
+              animation:google.maps.Animation.BOUNCE,
         });
-          var marker = new google.maps.Marker({
+          var marker05 = new google.maps.Marker({
           position: kea_prinsesse,
           map: map,
-          title: 'KEA PRINSESSE CHARLOTTES GADE ER HER!!'
+              icon: image,
+          title: 'KEA PRINSESSE CHARLOTTES GADE ER HER!!',animation:google.maps.Animation.BOUNCE,
         });
-          var marker = new google.maps.Marker({
+          var marker06 = new google.maps.Marker({
           position: kea_landskronagade,
           map: map,
-          title: 'KEA LANDSKRONAGADE ER HER!!'
+              icon: image,
+          title: 'KEA LANDSKRONAGADE ER HER!!',animation:google.maps.Animation.BOUNCE,
         });
       }
